@@ -35,7 +35,7 @@ app.get(
 );
 
 app.get("/:word/echo", (req, res) => {
-    return res.json({word: req.params.word});
+    return res.json({echo: req.params.word});
 });
 
 
