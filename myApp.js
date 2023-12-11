@@ -41,7 +41,7 @@ app.get("/:word/echo", (req, res) => {
 app.route("/name")
    .get((req, res) => {
     const { first, last } = req.query;
-    return res.json({name: `${firstname} ${lastname}`});
+    return res.json({name: `${first} ${last}`});
    });
 
 
