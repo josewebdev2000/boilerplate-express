@@ -45,6 +45,10 @@ app.route("/name")
    .get((req, res) => {
     const { first, last } = req.query;
     return res.json({name: `${first} ${last}`});
+   })
+   .post((req, res) => {
+    const { first, last } = req.body;
+    return res.json({name: `${first} ${last}`});
    });
 
 
